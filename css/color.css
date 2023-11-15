@@ -60,7 +60,7 @@ p,
 .......................................*/
 
 .quote-right-light {
-    color: #e9f1f9;
+    color: #FCF7F8;
 }
 
 
@@ -83,7 +83,7 @@ a:hover,
 .mobile-menu-3 a.meanmenu-reveal,
 .week-count h1 sup,
 .experience li span {
-    color: #001c6b;
+    color: #293854;
 }
 
 
@@ -122,7 +122,7 @@ button,
 .week-count h1,
 .case-quote a,
 .sub-2:after {
-    color: #09bc8a;
+    color: #c32a36;
 }
 
 
@@ -166,46 +166,46 @@ button,
 .how-it-works[data-overlay]::before,
 .price-tag,
 .input-white + .input-group-append .btn:hover {
-    background: #001c6b;
+    background: #293854;
 }
 
 
 /*blue bg opacity classes*/
 
 .bg-blue-op-9 {
-    background: rgba(0, 28, 107, 0.9);
+    background: rgba(41, 56, 84, 0.9);
 }
 
 .bg-blue-op-8 {
-    background: rgba(0, 28, 107, 0.8);
+    background: rgba(41, 56, 84, 0.8);
 }
 
 .bg-blue-op-7 {
-    background: rgba(0, 28, 107, 0.7);
+    background: rgba(41, 56, 84, 0.7);
 }
 
 .bg-blue-op-6 {
-    background: rgba(0, 28, 107, 0.6);
+    background: rgba(41, 56, 84, 0.6);
 }
 
 .bg-blue-op-5 {
-    background: rgba(0, 28, 107, 0.5);
+    background: rgba(41, 56, 84, 0.5);
 }
 
 .bg-blue-op-4 {
-    background: rgba(0, 28, 107, 0.4);
+    background: rgba(41, 56, 84, 0.4);
 }
 
 .bg-blue-op-3 {
-    background: rgba(0, 28, 107, 0.3);
+    background: rgba(41, 56, 84, 0.3);
 }
 
 .bg-blue-op-2 {
-    background: rgba(0, 28, 107, 0.2);
+    background: rgba(41, 56, 84, 0.2);
 }
 
 .bg-blue-op-1 {
-    background: rgba(0, 28, 107, 0.1);
+    background: rgba(41, 56, 84, 0.1);
 }
 
 
@@ -264,46 +264,46 @@ button,
 .portfolio-overlay:before,
 .line-right:after,
 .experience li:after {
-    background: #09bc8a;
+    background: #c32a36;
 }
 
 
 /*green bg opacity classes*/
 
 .bg-green-op-9 {
-    background: rgba(9, 188, 138, 0.9)
+    background: rgba(195, 42, 54, 0.9)
 }
 
 .bg-green-op-8 {
-    background: rgba(9, 188, 138, 0.8)
+    background: rgba(195, 42, 54, 0.8)
 }
 
 .bg-green-op-7 {
-    background: rgba(9, 188, 138, 0.7)
+    background: rgba(195, 42, 54, 0.7)
 }
 
 .bg-green-op-6 {
-    background: rgba(9, 188, 138, 0.6)
+    background: rgba(195, 42, 54, 0.6)
 }
 
 .bg-green-op-5 {
-    background: rgba(9, 188, 138, 0.5)
+    background: rgba(195, 42, 54, 0.5)
 }
 
 .bg-green-op-4 {
-    background: rgba(9, 188, 138, 0.4)
+    background: rgba(195, 42, 54, 0.4)
 }
 
 .bg-green-op-3 {
-    background: rgba(9, 188, 138, 0.3)
+    background: rgba(195, 42, 54, 0.3)
 }
 
 .bg-green-op-2 {
-    background: rgba(9, 188, 138, 0.2)
+    background: rgba(195, 42, 54, 0.2)
 }
 
 .bg-green-op-1 {
-    background: rgba(9, 188, 138, 0.1)
+    background: rgba(195, 42, 54, 0.1)
 }
 
 
@@ -326,14 +326,14 @@ button,
 .thanks[data-overlay]::before,
 .experience li:before,
 .service-icon-2 {
-    background: #e9f1f9;
+    background: #FCF7F8;
 }
 
 
 /*important*/
 
 .light-white {
-    background: #e9f1f9 !important;
+    background: #FCF7F8 !important;
 }
 
 
@@ -342,30 +342,30 @@ button,
 .......................................*/
 
 .blob.green {
-    box-shadow: 0 0 0 0 rgb(9, 188, 138);
+    box-shadow: 0 0 0 0 rgb(163, 22, 33, );
 }
 
 @keyframes pulse-green {
     0% {
-        box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+        box-shadow: 0 0 0 0 rgba(195, 42, 54, 0.7);
     }
     70% {
-        box-shadow: 0 0 0 30px rgba(51, 217, 178, 0);
+        box-shadow: 0 0 0 30px rgba(195, 42, 54, 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+        box-shadow: 0 0 0 0 rgba(195, 42, 54, 0);
     }
 }
 
 @keyframes pulse-green-small {
     0% {
-        box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+        box-shadow: 0 0 0 0 rgba(195, 42, 54, 0.7);
     }
     70% {
-        box-shadow: 0 0 0 15px rgba(51, 217, 178, 0);
+        box-shadow: 0 0 0 15px rgba(195, 42, 54, 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+        box-shadow: 0 0 0 0 rgba(195, 42, 54, 0);
     }
 }
 
@@ -377,7 +377,7 @@ button,
 .price-head .price-icon:before,
 .btn-border-blue,
 .blog-3-each:hover {
-    border-color: #001c6b;
+    border-color: #293854;
 }
 
 
@@ -405,21 +405,21 @@ button,
 .icon-box-icon,
 .partner:hover .partner-logo,
 .thank-icon {
-    border-color: #09bc8a;
+    border-color: #c32a36;
 }
 
 
 /*border left color*/
 
 .client-count:after {
-    border-left-color: #09bc8a
+    border-left-color: #c32a36
 }
 
 
 /*border topcolor*/
 
 .partner:hover .partner-logo:after {
-    border-top-color: #09bc8a
+    border-top-color: #c32a36
 }
 
 
@@ -445,14 +445,14 @@ button,
 .each-blog-standared .blog-list-content,
 .partner-logo,
 .main-menu li .submenu .submenu li a {
-    border-color: #e9f1f9;
+    border-color: #FCF7F8;
 }
 
 
 /*border topcolor*/
 
 .partner-logo:after {
-    border-top-color: #e9f1f9;
+    border-top-color: #FCF7F8;
 }
 
 

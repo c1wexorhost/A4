@@ -2652,7 +2652,7 @@
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #e9f1f9;
-    border: 1px solid #09bc8a;
+    border: 1px solid #c32a36;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
