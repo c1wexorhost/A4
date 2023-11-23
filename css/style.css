@@ -3584,3 +3584,8 @@ ul.theme-ul li img {
 .theme-colors p {
     line-height: 19px;
 }
+@media only screen and (max-width: 767px) {
+    .silder-img {
+        background-image: url('img/banner/mobile_banner.jpg'); /* replace 'mobile_banner.jpg' with your mobile image path */
+    }
+}

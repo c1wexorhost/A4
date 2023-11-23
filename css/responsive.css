@@ -355,6 +355,9 @@
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 767px) {
+    .silder-img {
+        background-image: url('img/banner/banner_2.jpg'); /* replace 'mobile_banner.jpg' with your mobile image path */
+    }
     .icon-text h5 {
         font-size: 15px;
     }
