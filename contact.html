@@ -231,38 +231,39 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="#" class="relative z-5 mt-10">
+                    <form action="#" id="contactForm" name="contactForm" class="relative z-5 mt-10">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group relative mb-30 mb-sm-20">
-                                    <input type="text" class="form-control input-lg input-white shadow-5" id="name"
-                                        placeholder="Name">
+                                    <input type="text" class="form-control input-lg input-white shadow-5" name="name"
+                                        id="name" placeholder="Name" minlength="3" maxlength="50" required>
                                     <i class="far fa-user transform-v-center"></i>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group relative mb-30 mb-sm-20">
-                                    <input type="email" class="form-control input-lg input-white shadow-5" id="email"
-                                        placeholder="Email">
+                                    <input type="email" class="form-control input-lg input-white shadow-5" name="email"
+                                        id="email" placeholder="Email" required>
                                     <i class="far fa-envelope transform-v-center"></i>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group relative mb-30 mb-sm-20">
-                                    <input type="text" class="form-control input-lg input-white shadow-5" id="phone"
-                                        placeholder="Phone number">
-                                    <i class="fas fa-mobile-alt transform-v-center"></i>
+                                    <input type="text" class="form-control input-lg input-white shadow-5" name="subject"
+                                        id="subject" placeholder="Subject" minlength="5" maxlength="50" required>
+                                    <i class="fas fa-book transform-v-center"></i>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group relative mb-30 mb-sm-20">
                                     <textarea class="form-control input-white shadow-5" name="message" id="message"
-                                        cols="30" rows="7" placeholder="Your message"></textarea>
+                                        cols="30" rows="4" placeholder="Message" minlength="10" maxlength="500"
+                                        required></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center mt-30">
-                                <a href="#" class="btn btn-square  blob-small">SUBMIT<i
-                                        class="fas fa-long-arrow-alt-right ml-20"></i></a>
+                                <button type="submit" value="Send Message" class="btn btn-square  blob-small">SUBMIT<i
+                                        class="fas fa-long-arrow-alt-right ml-20"></i></button>
                             </div>
                         </div>
                     </form>
@@ -508,6 +509,55 @@
     <!-- Footer area end -->
     <!-- ********************* -->
     <!-- JS Files -->
+    <script>
+        document
+            .getElementById("contactForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get form values
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+                var client_id = "wc_7vEiIrfgNsoYM37wa7K9"; // Replace with your user ID
+
+                var payload = {
+                    client_id: client_id,
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message,
+                };
+
+                // Send JSON request using Fetch API
+                // Replace with your user chat bot id
+                fetch("https://chatbot.wexorai.com/clientmessagef3", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(payload),
+                    redirect: "follow",
+                })
+                    .then(function (response) {
+                        if (response.ok) {
+                            alert("Message sent successfully!");
+                            // Reset form fields
+                            document.getElementById("name").value = "";
+                            document.getElementById("email").value = "";
+                            document.getElementById("subject").value = "";
+                            document.getElementById("message").value = "";
+                        } else {
+                            throw new Error("Failed to send message.");
+                        }
+                    })
+                    .catch(function (error) {
+                        alert("An error occurred: " + error.message);
+                    });
+            });
+    </script>
+
     <script src="js/modernizr-3.5.0.min.js"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
